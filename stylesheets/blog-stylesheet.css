@@ -1,0 +1,75 @@
+/*this is to give the whole page a position attribute as opposted to static, which would then render it's child elements to take on the properties of the body*/
+
+#main {
+  display: block;
+  max-width: 45em;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+/*This positions the blog title*/
+/*First define the size of the title, then the position. The combination of the position-relative and auto-margins seems to do the trick for horizontally centering the element on the page*/
+
+#blog_title {
+  display: block;
+  width: 20em;
+  height: 10em;
+
+  position: relative;
+  top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Courier, sans-serif;
+}
+
+/*blog title styling*/
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+
+#image_container {
+  display: block;
+  max-width: 45em;
+
+  position: relative;
+  top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 100%;
+}
+
+/*blog content position and styling*/
+/*max-width and padding properties added for responsiveness*/
+
+#blog_content {
+  display: block;
+  max-width: 45em;
+  height: 50em;
+
+  position: relative;
+  top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  padding-left: 40px;
+
+  font-family: Courier, sans-serif;
+}

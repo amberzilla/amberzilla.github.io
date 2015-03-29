@@ -43,7 +43,7 @@ h4 {
   max-width: 45em;
 
   position: relative;
-  top: 2em;
+  top: 3em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,4 +72,5 @@ img {
   padding-left: 40px;
 
   font-family: Courier, sans-serif;
+  font-size: 1.5em;
 }

@@ -7,8 +7,10 @@ body {
 }
 ul li a {
   text-decoration: none;
-  list-style: none;
   color: #C85BA4;
+}
+ul li {
+  list-style: none;
 }
 a:hover {
   color: #DF9FB7;

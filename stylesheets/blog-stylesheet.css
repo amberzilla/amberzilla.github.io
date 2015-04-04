@@ -74,3 +74,8 @@ img {
   font-family: Courier, sans-serif;
   font-size: 1.5em;
 }
+
+/*this is styling for code blocks*/
+code {
+  color: #C85BA4;
+}

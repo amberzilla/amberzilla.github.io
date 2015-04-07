@@ -15,7 +15,7 @@
 
 #blog_title {
   display: block;
-  width: 20em;
+  width: 30em;
   height: 10em;
 
   position: relative;
@@ -46,6 +46,9 @@ h4 {
   top: 3em;
   margin-left: auto;
   margin-right: auto;
+}
+#image_container h4 {
+  font-family: Courier, sans-serif;
 }
 
 img {

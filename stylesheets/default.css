@@ -1,27 +1,80 @@
-/*this stylesheet is being shared by both index.html and blog_index.html for the nav bar and header*/
+/*this stylesheet is being shared by:
+/*
+index.html
+about.html
+blog_index.html
+links.html
+contact.html
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
 
 #body {
-  position: relative;
-  font-family: Courier, sans-serif;
+  font-family: 'Lobster', cursive;
+  height: 100%;
+  bottom: 0;
+}
+
+#nav {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding: 3% 2.5% 2%;
+  background-color: #D47D8D;
+}
+
+#header {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  height: 100%;
+  padding: 2.5% 5%;
+  text-align: left;
+  word-wrap: break-word;
+  background-color: #F0D1E8;
+}
+#header a {
+  font-size: 11em;
+  text-decoration: none;
+  color: #D47D8D;
+  text-shadow: 5px 5px 10px #F3ECF9;
+}
+
+#header a:hover {
+  color: #A7CFE2;
 }
 
 ul {
-  position: fixed;
-  padding-left: 2em;
-  padding-right: 2em;
   height: 100%;
 
   list-style: none;
   text-align: right;
 }
 
-/*this section has a lot to do with the sizing of the the nav area*/
+/*Nav Area*/
 
-/*I included a bunch of media queries which will resize the link text when a user re-sizes the browser and hits the specified pixel width*/
+/*I included a bunch of media queries which will
+resize the link text when a user re-sizes the browser
+and hits the specified pixel width*/
 
  ul li a {
   text-decoration: none;
   font-size: 4em;
+  color: #F3ECF9;
+}
+
+a:hover {
+  color: #A7CFE2;
 }
 
 @media (max-width: 1000px) {
@@ -30,19 +83,31 @@ ul {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   ul li a {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   ul li a {
     font-size: 1.5em;
   }
 }
 
-/*This is further styling specific to each nav link */
+@media (max-width: 580px) {
+  ul li a {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 550px) {
+  ul li a {
+    font-size: 1.3em;
+  }
+}
+
+/*Nav links*/
 
 #home {
   display: block;
@@ -84,63 +149,44 @@ ul {
   max-width: 100%
 }
 
-#header {
-  float: right;
-  position: fixed;
-  left: 1em;
-  top: 0.2em;
-  max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+/*Styling for about.html*/
 
-  font-size: 11em;
-  text-align: left;
-  word-wrap: break-word;
-}
-
-/*This section forward is specific to blog_index.html*/
-
-/*I decided to make the text for the blog_index page heading a little smaller so that I can fit the table of blog entries beneath it*/
-
-#my_blog {
-  float: right;
-  position: fixed;
-  left: 1.5em;
-  top: .5em;
-  max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-
-  font-size: 7em;
-  text-align: left;
-  word-wrap: break-word;
-}
-
-.blog_container {
-  float: right;
-  position: absolute;
-
-  max-width: 100%;
-  height: 3em;
-  margin-top: 20%;
-  margin-left: 17%;
-  margin-right: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-
+#header h1 {
   font-size: 3em;
 }
 
-.blog_container a {
-  text-decoration: none;
+#header img {
+  display: inline-block;
+  float: left;
+  padding-top: 3em;
+  margin-right: 5%;
 }
-/*this style is not getting applied, not sure why*/
-.blog_container img {
-  position: fixed;
-  margin: 2%;
-  max-width: 100%;
+
+#header p {
+  font-size: 3em;
+  margin-top: 1em;
+  font-family: Courier, sans-serif;
+}
+#header p a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #D47D8D;
+  text-shadow: 5px 5px 10px #F3ECF9;
+}
+
+/*Styling for blog_index.html*/
+
+#header ul {
+  height: 100%;
+  list-style: none;
+  text-align: left;
+  margin-top: 2em;
+  font-family: Courier, sans-serif;
+}
+#header ul li a {
+  text-align: right;
+  font-size: 3em;
+  text-decoration: none;
+  color: black;
+  /*text-shadow: 5px 5px 10px #A7CFE2;*/
 }

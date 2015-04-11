@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>Amber's Rock 'n' Roll Coding</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main id="main">
+  <div id="blog_title">
+    <h1>Enumerables</h1>
+    <h2>A week of tribute to old classics on vinyl</h2>
+    <h4>April 10, 2015</h4>
+  </div>
+  <div id="image_container">
+    <img src="blog_images/vinyl.png" alt="my record player"/>
+    <h4>This is my mid-century record cabinet that I scored for $50 at a local vintage furniture shop. Not shown here are 3 crates full of vinyl not yet transferred to the cabinet :)<h4>
+  </div>
+
+
+  <section id="blog_content">
+      <h2>Enumerables??</h2>
+      Yeah I know, it sounds like a made-up word that doesn't exist, and one that would get auto-corrected by your phone immediately. It took me a minute to get comfortable with this weird word, but turns out I am going to have to become best friends with <a href="http://ruby-doc.org/core-2.2.1/Enumerable.html">enumerables</a> because they are powerful methods in Ruby that allow you to "<a href="http://ruby.bastardsbook.com/chapters/enumerables/">traverse, search, sort and manipulate collections</a>," i.e., thisngs like arrays and hashes.
+      </br>
+      </br>
+      <h2>Cycle</h2>
+      Today I am going to talk about the Enumerable <a href="http://ruby-doc.org/core-2.2.1/Enumerable.html#method-i-cycle">cycle</a> method. In the Ruby documentation, this is the example that they show:
+      </br>
+      </br>
+      <img src="blog_images/cycle.png">
+      </br>
+      </br>
+      So basically, if you had an array that had the letters "a," "b," and "c" in them, applying the .cycle method to the array would cycle through each item infinitely.
+      </br>
+      </br>
+      That's cool, but what on earth would I use this for?
+      </br>
+      </br>
+      <h2>If I were a guest DJ</h2>
+      In Salt Lake City, we have a super cool local radio station called <a href="http://www.krcl.org/">90.9FM KRCL</a> that is run by volunteers and local sponsors. They play a lot of indie music, great classic rock'n'roll, world music, jazz, etc.
+      </br>
+      </br>
+      Let's pretend I were given a small guest DJ spot on KRCL, where I get to play 4 songs a day for a week, as a tribute to some of my favorite bands from the past. Ok, I'm a musican, not a DJ, but I boast a 3-crate collection of both classic and contemporary vinyl and I LOVE music!!
+      </br>
+      </br>
+      I am going to pick 3 records from my stack:
+      </br>
+      </br>
+      <code>
+      steely_dan </br>
+      hall_and_oats</br>
+      earth_wind_fire</br>
+      eagles</br>
+      </code>
+      </br>
+      </br>
+      I am going to make a list of songs from each album.
+      </br>
+      </br>
+      <img src="blog_images/albums.png">
+      </br>
+      </br>
+      While I'm at it, I am also going to create an array that cycles through days of the week. Note, I am adding .cycle to the end of the array to save myself some typing.
+      </br>
+      </br>
+      <code>
+      day = %w { Monday Tuesday Wednesday Thursday Friday Saturday Sunday }.cycle </br>
+      </code>
+      </br>
+      </br>
+      <h2>The week of tribute playlist!</h2>
+      Now I am going to create a playlist for the 7 days. The .cycle method has a cool thing called .next that you could apply to it, that will move through the next item in the array until you're done cycling through the array.
+      </br></br>
+      <code>
+      7.times do</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;day = day.next</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;song_1 = steely_dan.next</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;song_2 = hall_and_oats.next</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;song_3 = earth_wind_fire.next</br>
+      </br>
+      &nbsp;&nbsp;&nbsp;&nbsp;puts "#{day}'s Playlist: #{song_1}, #{song_2} and</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;#{song_3}"</br>
+      end</br>
+      </code>
+      </br>
+      </br>
+      The output would look like this (I took a screenshot of the output in my terminal to save some space here)
+      </br>
+      </br>
+      <img src="blog_images/playlist.png">
+      </br>
+      </br>
+      Since some of the albums ran out of songs, you will notice that on Sunday's playlist, some of the songs were repeated again. I guess that's alright since these are all mega hits. ;)
+      </br>
+      </br>
+      <h2>Conclusion</h2>
+      So the .cycle method not only allows you to cycle though a list of things, but allows you to cycle thourgh multiple lists and create things like schedules. It's pretty cool I think!
+      </br>
+      </br>
+      </br>
+      </br>
+  </section>
+</main>

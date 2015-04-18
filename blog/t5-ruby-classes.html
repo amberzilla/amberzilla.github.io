@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Amber's Rock 'n' Roll Coding</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main id="main">
+  <div id="blog_title">
+    <h1>Your local florist</h1>
+    <h2>my retirement business</h2>
+    <h4>April 18, 2015</h4>
+  </div>
+  <div id="image_container">
+    <img src="http://sollingerie.com/blog/wp-content/uploads/2015/01/700_givre-flower-shop-in-gunma-11.jpg" alt="girl develop it"/>
+    <h4>I love floral shops!</h4>
+  </div>
+
+
+  <section id="blog_content">
+    <h2>The retirement fantasy</h2>
+    Do you ever think about what you might do in your retirement? I certainly dream about retiring next to the beach in Hawaii, having brunch on a gorgeous porch with ocean view, taking naps or reading books in a hammock and enjoying beautiful walks along the beach every day.
+    </br></br>
+    Then there's the more realistic retirement plan - wouldn't I still like to have a job, something low-key, but productive and fun, so I don't get bored?
+    </br></br>
+    I recently discovered that I really enjoy flowers and noticed that Salt Lake City doesn't have very many floral shops. I often run to the grocery store to buy flowers and it's not nearly as fun as visiting a proper florist, the way I used to when I lived in Japan. So I got the idea of retiring as a florist.
+    </br></br>
+    <h2>My assistant, the class Florist</h2>
+    This week we learned about the ruby object, <a href="http://ruby-doc.org/core-2.2.0/Class.html"><b>Classes</b></a>, which allows you to mimic real-world situations. I sort of see the class being my assistant who will do a bunch of little tasks for me so I don't have to. Let's see how we could write a program for a florist, using a ruby class.
+    </br></br>
+    <h4>Naming a class</h4>
+    Naming a class is straight forward. Simply define it using "class" and give it a name, usually capitalized first letter.
+    </br></br>
+    <code>
+      class Florist
+    </code>
+    </br></br>
+    <h4>Initialize</h4>
+    The next thing you would do is to throw in an <b>initialize</b> method to the class. This is the code that runs at the very beginning, all the time.
+    </br></br>
+    <IMG SRC="blog_images/florist_initialize.png">
+    </br></br>
+    In this case, my Florist class will ask you what type of flowers you would like. It will take an input with the <b>gets.chomp</b> method, which is assigned to a <b>@flower</b> variable. I am also defining the price of the flowers.
+    </br></br>
+    <h4>Instance Variables</h4>
+    Notice the <b>@</b> signs in front of the variable names?
+    This allows these variables to be accessed from anywhere within the class, and will turn a normal variable into something called an <b>instance variable</b>.
+    </br></br>
+    <h4>More Methods!</h4>
+    After you've defined an initiazlie method, you can create as many methods within the class as you'd like. Methods are like tasks. In this case, I will have the Florist class ask the customer how many flowers they want, and say how much each will cost.
+    </br></br>
+    <img src="blog_images/florist_methods.png">
+    </br></br>
+    <h4>Let's run it!</h4>
+    In order for me to run the code, I need to do a few things.
+    </br></br>
+    <img src="blog_images/florist_go.png">
+    </br></br>
+    <ol>
+      <li>I need to create a new instance of the Florist class with <b>Florist.new</b></li>
+      <li>I will assign the instance to a variable called <b>florist</b></li>
+      <li>I will then call each method <b>order</b> and <b>payment</b> of the Florist method</li>
+    </ol>
+    Running this in terminal, it looks like this. :)
+    </br></br>
+    <a href="http://gyazo.com/506f64494a731b65f44596e1c0c444ff"><img src="http://i.gyazo.com/506f64494a731b65f44596e1c0c444ff.gif" /></a>
+    </br></br>
+    <h2>Conclusion</h2>
+    Now I have this amazing assistant, the Florist class, which will take orders for me and tell my customer how much they need to pay! Okay, the software needs to be a lot more sophisticaed and obviously needs work, but you get the idea about how classes can allow you to run multiple methods within it. It's pretty cool, you should try it!
+    </br></br>
+  </br></br>
+  </br></br>
+  </section>
+
+</main>
+

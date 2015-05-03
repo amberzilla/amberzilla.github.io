@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+  <title>Amber's Rock 'n' Roll Coding</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main id="main">
+  <div id="blog_title">
+    <h1>JavaScript!</h1>
+    <h2>Ruby's slightly verbose uncle</h2>
+    <h4>May 2, 2015</h4>
+  </div>
+  <div id="image_container">
+    <img src="http://cdn.gifbay.com/2014/01/uncle_rico-114019.gif"/>
+    <h4>Uncle Rico forever</h4>
+  </div>
+
+
+  <section id="blog_content">
+    <h2>JavaScript</h2>
+    Last year I tried to learn JavaScript. I'll be honest, creating variables and if/else statements seemed straight forward. Once I got to the for loops, though. Wow, wow, wow.
+    </br></br>
+    <code>
+      for (var i = 0; i < something.length; i ++){</br>
+      &nbsp;&nbsp; do stuff</br>
+      }</br>
+    </code></br>
+    What the crap is this?? THIS looks like real <b>code</b>, not human language but computer language. This year, however, I realized that JavaScript is kind of like Ruby's wordy(verbose) uncle. It's been around for a while, pretty much does similar things as Ruby, maybe takes a little longer to tell a story, but still knows how to do really cool things. ;)
+    <h2>What is JavaScript</h2>
+    Really quickly, for people who are new to programming, JavaScript is a programming language that allows you to add computer scripts to web pages. So, if HTML/CSS allows you to specify where the words and pictures go, and what color the fonts and background need to be, JavaScript allows you to add animations. JavaScript also allows the user to interact with the page. When you click a button, or enter text into a form field, there are events that fire up and calculations or decisions that are made with regards to your input. JavaScript allows you to write logic that handles those interactions.
+    <h4>Variables</h4>
+    Just like Ruby, JavaScript uses variables to store values. The only difference is that in JS, you need to actually say it's a variable. So in Ruby:
+    </br></br>
+     <code>
+      dinner = spaghetti
+    </code></br></br>
+    whereas in JS</br></br>
+    <code>
+      var dinner = spaghetti;
+    </code>
+    <h4>Syntax</h4>
+    JavaScript has a slightly more verbose syntax than Ruby. You have to use a lot of semicolons. Sometimes you don't have to, but when in doubt, put a semicolon anywhere and everywhere. Also, lots of squigly {} brackets and regular () brackets to display where things begin and end. In the variable example above, I had to put a semicolon after the variable declaration. Here's a few more examples. In Ruby,
+    </br></br>
+    <code>
+      puts "this is simple" </br></br>
+
+      def this_is_a_method</br>
+      &nbsp;&nbsp; do stuff</br>
+      end
+      </br></br>
+    </code>
+    in JS, </br></br>
+    <code>
+      console.log("so many semicolons"); </br></br>
+
+      var name = function(x){ </br>
+      &nbsp;&nbsp; do stuff;</br>
+      }; </br>
+    </code>
+    </br>
+   <h4>The For Loop</h4>
+    This is the thing that tripped me up last year but it's basically like a Ruby while loop, but does all the counting for you in one line. I like the for loop now. In Ruby,
+    </br></br>
+    <code>
+      count = 0</br>
+      while count < 5</br>
+      &nbsp;&nbsp; do stuff</br>
+      &nbsp;&nbsp; count += 1</br>
+      end</br></br>
+    </code>
+      in JS, </br></br>
+    <code>
+      for (var i = 0; i < 5; i ++){</br>
+      &nbsp;&nbsp; do stuff;</br>
+      };</br></br>
+    </code>
+    </br></br>
+    They both basically do the same thing, but JS does in slightly less lines.
+    </br></br>
+    <h4>Object Literal</h4>
+    Object literal in JS is pretty dang cool. It's basically like a hash, but in <a href="http://www.w3schools.com/json/">JSON</a> format, which is so incredibly easy to read and interact with. So in Ruby,
+    </br></br>
+     <code>
+      hash = {</br>
+      &nbsp;&nbsp; "dinner" => pizza,</br>
+      &nbsp;&nbsp; "breakfast" => eggs</br>
+      }</br></br>
+    </code>
+    in JS, </br></br>
+    <code>
+      var object = {</br>
+      &nbsp;&nbsp; dinner : ramen,</br>
+      &nbsp;&nbsp; breakfast : waffles,</br>
+      };</br></br>
+    </code>
+    In addition, using the JS object literal, you can gain access to the values inside of a particular property using the dot notation.
+  </br></br>
+    <code>
+      object.dinner </br>
+      #=> ramen
+    </code></br></br>
+    So convenient!
+    </br></br>
+    <h4>Functions</h4>
+    Functions are sort of like methods in Ruby. They are objects that hold a bunch of behavior together. Here is a method in Ruby:
+    </br></br>
+     <code>
+      def dinner </br>
+      &nbsp;&nbsp; puts "what's for dinner?"</br>
+      &nbsp;&nbsp; d = gets.chomp</br>
+      &nbsp;&nbsp; if d == "ramen"</br>
+      &nbsp;&nbsp;&nbsp; puts "great choice!"</br>
+      &nbsp;&nbsp; end</br>
+      end</br>
+      </br></br>
+    </code>
+    in JS, </br></br>
+    <code>
+      function = dinner(d){</br>
+      &nbsp;&nbsp; console.log("what's for dinner?");</br>
+      &nbsp;&nbsp; if (d == "ramen"){</br>
+      &nbsp;&nbsp;&nbsp; console.log("great choice!");</br>
+      &nbsp;&nbsp; };</br>
+      };</br></br>
+      dinner("ramen");
+    </code>
+    </br></br>
+  <h2>Conclusion</h2>
+  As you can see, Ruby and JavaScript are very similar. There are some things that Ruby does better and others that JavaScript does better, but when you are learning programming, you need to know both because JavaScript is the language of the web. :)
+  </br></br>
+  </br></br>
+  <div align = "center">
+  <a href="c6-stereotype-threat.html">Previous</a>
+  <a href="c7-values.html">Next</a>
+  </div>
+  </br></br>
+  </br></br>
+
+  </section>
+
+</main>
+

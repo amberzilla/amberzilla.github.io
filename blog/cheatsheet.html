@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<head>
+
+
+</head>
+
+<body>
+<header>
+Ruby to JavaScript Comparison Cheat Sheet
+</header>
+  <table>
+    <tr>
+      <th>Ruby</th>
+      <th>JavaScript</th>
+    </tr>
+
+    <tr>
+      <td>Variables</td>
+    </tr>
+
+    <tr>
+      <td>instrument = "guitar"</td>
+      <td><span class="color1">var</span> instruent = "guitar";</td>
+    </tr>
+
+    <tr>
+      <td>Operators - Division</td>
+    </tr>
+
+    <tr>
+      <td>5 / 2 = 2</td>
+      <td>5 / 2 = 2.5</td>
+    </tr>
+    <tr>
+      <td>5 / 2 = 2</td>
+      <td><span class="color1">Math.floor</span>(5 / 2) = 2</td>
+    </tr>
+    <tr>
+      <td>5.<span class="color1">to_f</span> / 2 = 2.5</td>
+      <td>5 / 2 = 2.5</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="color1">puts</span> "I love music!"</br>
+        #=>  "I love music"
+      </td>
+      <td>
+        <span class="color1">console.log</span>("I love music!")</br>
+        #=>  "I love music"
+      </td>
+    </tr>
+
+    <tr>
+      <td>Flow Control</td>
+    </tr>
+
+    <tr>
+      <td>
+        array = [1, 2, 3, 4, 5]</br>
+        array.<span class="color1">each</span> {|a| a + 1} </br>
+        #=> [2, 3, 4, 5, 6]
+      </td>
+
+      <td>
+        <span class="color1">for (var i = 0; i < array.length; i++)</span>{ </br>
+          array[i] += 1; </br>
+        } </br>
+        #=> [2, 3, 4, 5, 6]
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="color1">if</span> conditional </br>
+        &nbsp;&nbsp;block1</br>
+        <span class="color1">else</span> </br>
+        &nbsp;&nbsp;block 2</br>
+        <span class="color1">end</span> </br>
+      </td>
+
+      <td>
+        <span class="color1">if</span>(conditional) {</br>
+        &nbsp;&nbsp;block1</br>
+        } <span class="color1">else</span> {</br>
+        &nbsp;&nbsp;block 2</br>
+        }; </br>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="color1">case</span> conditional</br>
+        <span class="color1">when</span> value1</br>
+        &nbsp;&nbsp;block1</br>
+        <span class="color1">when</span> value2</br>
+        &nbsp;&nbsp;block2</br>
+        <span class="color1">else</span></br>
+        &nbsp;&nbsp;block3
+      </td>
+
+      <td>
+        <span class="color1">switch</span>(conditional){</br>
+        <span class="color1">case</span> value1<span class="color1">:</span></br>
+        &nbsp;&nbsp;block1</br>
+        <span class="color1">&nbsp;&nbsp;break;</span></br>
+        <span class="color1">case</span> value2<span class="color1">:</span></br>
+        &nbsp;&nbsp;block2</br>
+        <span class="color1">&nbsp;&nbsp;break;</span></br>
+        <span class="color1">default:</span></br>
+        &nbsp;&nbsp;block3</br>
+        }
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="color1">def</span> method_name(arguments)</br>
+        &nbsp;&nbsp;block</br>
+        <span class="color1">end</span></br>
+      </td>
+
+      <td>
+        <span class="color1">function</span> methodName(arguments){</br>
+        &nbsp;&nbsp;block;</br>
+        };
+      </td>
+    </tr>
+
+    <tr>
+      <td>hash = {key1 => value1, key2 => value2}</td>
+      <td>object = {property1: value1, property2: value2};</td>
+    </tr>
+    <tr>
+      <td>new_hash = <span class="color1">Hash.new()</span></td>
+      <td>newObject = <span class="color1">new Object();</span></td>
+    </tr>
+    <tr>
+      <td>new_random = <span class="color1">Random.new()</span></br>
+      new_random.rand(3,7) //returns a random number between 3 and 7</td>
+      <td><span class="color1">Math.random()</span>*(max-min) + min; //returns a random number between min and max</br>
+      Math.random()*(4) + 3; //returns a random number between 3 and 7</td>
+    </tr>
+
+  </table>
+
+</body>
